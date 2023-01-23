@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>lkross06</title>
+    <style>
+      * {
+        font-size: 32px;
+      }
+      h1 {
+        font-size: 100px;
+      }
+      h2 {
+        font-size: 38px;
+      }
+      #cbcontainer span {
+        display: block;
+      }
+
+      #roll {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>ROULETTE</h2>
+
+    <p>game</p>
+    <select oninput="update_game()" id="gameselect">
+        <option disabled selected value>-- select an option --</option>
+        <option>valorant</option>
+        <option>overwatch</option>
+        <option>rocket league</option>
+        <option>btd6</option>
+    </select>
+
+    <br>
+
+    <p>type</p>
+    <select oninput="update_type()" id="typeselect">
+        <option disabled selected value>-- select an option --</option>
+    </select>
+
+    <div id="cbcontainer"></div>
+
+    <br>
+
+    <button onclick="roulette()" id="roll" disabled>ROLL</button>
+
+    <h1 id="choice"></h1>
+
+    <script src="roulette.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Letter Boxed Solver</title>
+        <style>
+            /* css here */
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            input {
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="form">
+            <h2>Form</h2>
+            <p>1. choose .txt file with all english words separated by lines</p>
+            <input type="file" id="inputfile" accept="txt">
+
+            <br>
+
+            <p>2. enter the 3 letters on each of the 4 sides of the box</p>
+            <input type="text" id="side1" maxlength="3">
+            <input type="text" id="side2" maxlength="3">
+            <input type="text" id="side3" maxlength="3">
+            <input type="text" id="side4" maxlength="3">
+
+            <br>
+
+            <p>3. run the algorithm :></p>
+            <input type="button" id="submit" value="Submit">
+        </div>
+        <hr>
+        <div id="solutions">
+            <h2>Solutions</h2>
+            <!-- solutions will go here -->
+        </div>
+        <script src="letter_boxed.js"></script>
+    </body>
+</html>
